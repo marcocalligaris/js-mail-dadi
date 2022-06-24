@@ -12,11 +12,10 @@ console.log(addresses);
 let email = prompt('Scrivi qui il tuo indirizzo email.');
 
 for(let i = 0; i < addresses.length; i++) {
-
-    if(email = addresses[i]) {
-        console.log('Benvenuto!');
+    if(email === (addresses[i])) {
+        alert('Benvenuto!');
     } else {
-        console.log('Spiacenti');
+        alert('Spiacenti');
     }
 }
 
