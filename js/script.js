@@ -7,17 +7,14 @@
 // * Creo l'array con gli indirizzi e-mail
 
 const addresses = ["giovanni@gmail.com", "maria@hotmail.it", "samuele@yahoo.com", "pietro@gmail.com", "alessandra@libero.it"];
-console.log(addresses);
+const userEmail = prompt('Scrivi qui il tuo indirizzo email.');
 
-let email = prompt('Scrivi qui il tuo indirizzo email.');
 
-for(let i = 0; i < addresses.length; i++) {
-    if(email === (addresses[i])) {
-        alert('Benvenuto!');
+    if (addresses.indexOf(userEmail) > -1) {
+        alert('Benvenuto!')
+        console.log('Benvenuto!')
     } else {
-        alert('Spiacenti');
+        alert('Dati errati o utente non autorizzato.')
+        console.log('Spiacenti')
     }
-}
-
-
 
